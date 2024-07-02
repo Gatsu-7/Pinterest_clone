@@ -1,0 +1,75 @@
+<% include ./partials/header.ejs %>
+<div
+  class="w-full h-screen bg-[url('https://images.unsplash.com/photo-1482747029550-096ad6aa9caf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center flex items-center justify-center"
+>
+  <div class="w-96 h-[79vh] bg-white px-16 py-8 rounded-[30px]">
+    <h1
+      class="text-[28px] tracking-tighter captilize text-center font-semibold leading-none whitespace-nowrap mb-3 text-zinc-700"
+    >
+      Welcome To Pinterest
+    </h1>
+    <h4 class="font-sm tracking-tighter leading-none text-center mb-5">
+      Find new ideas to try
+    </h4>
+    <form action="">
+      <h4 class="text-sm ml-2">Email</h4>
+      <input
+        class="border-2 rounded-xl mb-2 block w-full h-full px-3 py-2"
+        type="text"
+        name="username"
+        placeholder="Email"
+      />
+      <h4 class="text-sm ml-2">Password</h4>
+      <input
+        class="border-2 rounded-xl block w-full h-full px-3 py-2 mb-2"
+        type="password"
+        placeholder="Create a password"
+        name="password"
+      />
+
+      <h4 class="text-sm ml-2">Birthdate</h4>
+      <input
+        class="border-2 rounded-xl block w-full h-full px-3 py-2 mb-2"
+        type="date"
+        placeholder="dd-mm-yyyy"
+        name="date"
+      />
+
+      <input
+        class="border-2 rounded-full font-semibold block w-full h-full px-3 py-2 bg-red-600 text-white rounded-full"
+        type="submit"
+        value="Continue"
+      />
+      <h3 class="text-zinc-700 font-semibold text-center">OR</h3>
+      <input
+        class="border-2 rounded-full font-semibold block w-full h-full mb-4 px-3 py-2 bg-blue-600 text-white rounded-full"
+        type="submit"
+        value="Continue with Facebook"
+      />
+      <h5
+        class="text-zinc-700 tracking-tighter leading-none text-xs text-center"
+      >
+        By continuing, you agree to Pinterest's
+      </h5>
+      <h5 class="font-bold text-tracking leading text-xs">
+        Terms of Service<span
+          class="text-zinc-700 tracking-tighter leading-none font-normal text-xs text-center"
+        >
+          and acknowledge you've read our
+          <a
+            href="#"
+            class="font-bold text-tracking leading text-xs text-black decoration-solid"
+          >
+            Privacy Policy. Notice at collection.
+          </a></span
+        >
+      </h5>
+    </form>
+    <a
+      class="inline-block mt-5 mb-5 text-sm font-semibold text-zinc-700 text-center w-full"
+      href="/"
+      >Log in to Existing Account</a
+    >
+  </div>
+</div>
+<%include ./partials/footer.ejs %>
